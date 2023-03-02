@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21E691925732EB173ED49DD9 /* Pods_TodayFoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AEE4F9D4CFEF127F26F83D /* Pods_TodayFoodTests.framework */; };
+		5DA25BEDBA3472603D3064B4 /* Pods_TodayFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A64FEDE128E41FC1F84A22E /* Pods_TodayFood.framework */; };
+		801FB83629AA325E00AD644D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801FB83529AA325E00AD644D /* AppDelegate.swift */; };
+		801FB83A29AA325E00AD644D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801FB83929AA325E00AD644D /* SplashViewController.swift */; };
+		801FB83D29AA325E00AD644D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801FB83B29AA325E00AD644D /* Main.storyboard */; };
+		801FB83F29AA326000AD644D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801FB83E29AA326000AD644D /* Assets.xcassets */; };
+		801FB84D29AA326000AD644D /* TodayFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801FB84C29AA326000AD644D /* TodayFoodTests.swift */; };
+		801FB85729AA326000AD644D /* TodayFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801FB85629AA326000AD644D /* TodayFoodUITests.swift */; };
+		801FB85929AA326000AD644D /* TodayFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801FB85829AA326000AD644D /* TodayFoodUITestsLaunchTests.swift */; };
+		804A496F29AA3D1100FF8AA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A496E29AA3D1100FF8AA5 /* HomeViewController.swift */; };
+		804A497229AA3F8500FF8AA5 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A497129AA3F8500FF8AA5 /* UIStoryboard+Ext.swift */; };
+		804A497529AA407A00FF8AA5 /* ViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A497429AA407A00FF8AA5 /* ViewControllerManager.swift */; };
+		804A498329AAF48A00FF8AA5 /* CustomSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A498229AAF48A00FF8AA5 /* CustomSideMenuNavigationController.swift */; };
+		804A498629AAF4C100FF8AA5 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A498529AAF4C100FF8AA5 /* SideMenuViewController.swift */; };
+		807E3F6729AF9E740096297C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807E3F6629AF9E740096297C /* BaseViewController.swift */; };
+		807E3F6929AFA15A0096297C /* LocalKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807E3F6829AFA15A0096297C /* LocalKeyword.swift */; };
+		809AD72B29ACD03600995E82 /* RecommendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809AD72A29ACD03600995E82 /* RecommendListViewController.swift */; };
+		809AD72D29ACD08E00995E82 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809AD72C29ACD08E00995E82 /* SettingViewController.swift */; };
+		80AA57CA29AE2E6F00BE43F7 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA57C929AE2E6F00BE43F7 /* BaseAPI.swift */; };
+		80AA57CF29AE2EBB00BE43F7 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA57CE29AE2EBB00BE43F7 /* SearchAPI.swift */; };
+		80AA57D129AE2ECF00BE43F7 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA57D029AE2ECF00BE43F7 /* SearchService.swift */; };
+		80AA57D329AE2EDA00BE43F7 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA57D229AE2EDA00BE43F7 /* BaseService.swift */; };
+		80AA57D929AF652500BE43F7 /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = 80AA57D829AF652500BE43F7 /* DaumMap.embeddedframework */; };
+		80AA57DB29AF660900BE43F7 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AA57DA29AF660900BE43F7 /* DaumMap.framework */; };
+		80AA57DF29AF661A00BE43F7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AA57DE29AF661900BE43F7 /* OpenGLES.framework */; };
+		80AA57E129AF662900BE43F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AA57E029AF662900BE43F7 /* SystemConfiguration.framework */; };
+		80AA57E329AF663400BE43F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AA57E229AF663400BE43F7 /* CoreLocation.framework */; };
+		80AA57E529AF663C00BE43F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AA57E429AF663C00BE43F7 /* QuartzCore.framework */; };
+		80AA57EE29AF69E400BE43F7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AA57E629AF664600BE43F7 /* libc++.tbd */; };
+		80AA57EF29AF69F300BE43F7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AA57EA29AF668700BE43F7 /* libsqlite3.tbd */; };
+		80AA57F029AF69FE00BE43F7 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AA57E829AF666700BE43F7 /* libxml2.tbd */; };
+		84DEA6F79A467A08107ACA53 /* Pods_TodayFood_TodayFoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41996F7D12A9555CF314D1FD /* Pods_TodayFood_TodayFoodUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		801FB84929AA326000AD644D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 801FB82A29AA325E00AD644D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 801FB83129AA325E00AD644D;
+			remoteInfo = TodayFood;
+		};
+		801FB85329AA326000AD644D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 801FB82A29AA325E00AD644D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 801FB83129AA325E00AD644D;
+			remoteInfo = TodayFood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41996F7D12A9555CF314D1FD /* Pods_TodayFood_TodayFoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayFood_TodayFoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7498BD2C4D561B546821EF8D /* Pods-TodayFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayFood.release.xcconfig"; path = "Target Support Files/Pods-TodayFood/Pods-TodayFood.release.xcconfig"; sourceTree = "<group>"; };
+		77A383DBB059B15ACCA8FEAB /* Pods-TodayFoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayFoodTests.debug.xcconfig"; path = "Target Support Files/Pods-TodayFoodTests/Pods-TodayFoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C4CB8E8AA1E9E81B0EAB365 /* Pods-TodayFoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayFoodTests.release.xcconfig"; path = "Target Support Files/Pods-TodayFoodTests/Pods-TodayFoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		801FB83229AA325E00AD644D /* TodayFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		801FB83529AA325E00AD644D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		801FB83929AA325E00AD644D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		801FB83C29AA325E00AD644D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		801FB83E29AA326000AD644D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		801FB84329AA326000AD644D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801FB84829AA326000AD644D /* TodayFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		801FB84C29AA326000AD644D /* TodayFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFoodTests.swift; sourceTree = "<group>"; };
+		801FB85229AA326000AD644D /* TodayFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		801FB85629AA326000AD644D /* TodayFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFoodUITests.swift; sourceTree = "<group>"; };
+		801FB85829AA326000AD644D /* TodayFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		804A496E29AA3D1100FF8AA5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		804A497129AA3F8500FF8AA5 /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		804A497429AA407A00FF8AA5 /* ViewControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerManager.swift; sourceTree = "<group>"; };
+		804A498229AAF48A00FF8AA5 /* CustomSideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		804A498529AAF4C100FF8AA5 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		807E3F6629AF9E740096297C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		807E3F6829AFA15A0096297C /* LocalKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalKeyword.swift; sourceTree = "<group>"; };
+		809AD72A29ACD03600995E82 /* RecommendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewController.swift; sourceTree = "<group>"; };
+		809AD72C29ACD08E00995E82 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		80AA57C929AE2E6F00BE43F7 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		80AA57CE29AE2EBB00BE43F7 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		80AA57D029AE2ECF00BE43F7 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		80AA57D229AE2EDA00BE43F7 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		80AA57D829AF652500BE43F7 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
+		80AA57DA29AF660900BE43F7 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
+		80AA57DE29AF661900BE43F7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		80AA57E029AF662900BE43F7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		80AA57E229AF663400BE43F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		80AA57E429AF663C00BE43F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80AA57E629AF664600BE43F7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		80AA57E829AF666700BE43F7 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		80AA57EA29AF668700BE43F7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		80AA57ED29AF680900BE43F7 /* TodayFood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodayFood-Bridging-Header.h"; sourceTree = "<group>"; };
+		8A64FEDE128E41FC1F84A22E /* Pods_TodayFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9661E7802343082105667EA /* Pods-TodayFood-TodayFoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayFood-TodayFoodUITests.release.xcconfig"; path = "Target Support Files/Pods-TodayFood-TodayFoodUITests/Pods-TodayFood-TodayFoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E17BC57B6F765E000F769549 /* Pods-TodayFood-TodayFoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayFood-TodayFoodUITests.debug.xcconfig"; path = "Target Support Files/Pods-TodayFood-TodayFoodUITests/Pods-TodayFood-TodayFoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E447C9B5627CB656AF8D3D2B /* Pods-TodayFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayFood.debug.xcconfig"; path = "Target Support Files/Pods-TodayFood/Pods-TodayFood.debug.xcconfig"; sourceTree = "<group>"; };
+		E6AEE4F9D4CFEF127F26F83D /* Pods_TodayFoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayFoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		801FB82F29AA325E00AD644D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AA57DB29AF660900BE43F7 /* DaumMap.framework in Frameworks */,
+				80AA57EE29AF69E400BE43F7 /* libc++.tbd in Frameworks */,
+				80AA57EF29AF69F300BE43F7 /* libsqlite3.tbd in Frameworks */,
+				80AA57E329AF663400BE43F7 /* CoreLocation.framework in Frameworks */,
+				80AA57E529AF663C00BE43F7 /* QuartzCore.framework in Frameworks */,
+				5DA25BEDBA3472603D3064B4 /* Pods_TodayFood.framework in Frameworks */,
+				80AA57F029AF69FE00BE43F7 /* libxml2.tbd in Frameworks */,
+				80AA57E129AF662900BE43F7 /* SystemConfiguration.framework in Frameworks */,
+				80AA57DF29AF661A00BE43F7 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801FB84529AA326000AD644D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E691925732EB173ED49DD9 /* Pods_TodayFoodTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801FB84F29AA326000AD644D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DEA6F79A467A08107ACA53 /* Pods_TodayFood_TodayFoodUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27404034321D2E63DAD2844D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E447C9B5627CB656AF8D3D2B /* Pods-TodayFood.debug.xcconfig */,
+				7498BD2C4D561B546821EF8D /* Pods-TodayFood.release.xcconfig */,
+				E17BC57B6F765E000F769549 /* Pods-TodayFood-TodayFoodUITests.debug.xcconfig */,
+				A9661E7802343082105667EA /* Pods-TodayFood-TodayFoodUITests.release.xcconfig */,
+				77A383DBB059B15ACCA8FEAB /* Pods-TodayFoodTests.debug.xcconfig */,
+				7C4CB8E8AA1E9E81B0EAB365 /* Pods-TodayFoodTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		801FB82929AA325E00AD644D = {
+			isa = PBXGroup;
+			children = (
+				80AA57ED29AF680900BE43F7 /* TodayFood-Bridging-Header.h */,
+				801FB83429AA325E00AD644D /* TodayFood */,
+				801FB84B29AA326000AD644D /* TodayFoodTests */,
+				801FB85529AA326000AD644D /* TodayFoodUITests */,
+				801FB83329AA325E00AD644D /* Products */,
+				27404034321D2E63DAD2844D /* Pods */,
+				EE88BC9D4A2F2BF5268D24F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		801FB83329AA325E00AD644D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801FB83229AA325E00AD644D /* TodayFood.app */,
+				801FB84829AA326000AD644D /* TodayFoodTests.xctest */,
+				801FB85229AA326000AD644D /* TodayFoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		801FB83429AA325E00AD644D /* TodayFood */ = {
+			isa = PBXGroup;
+			children = (
+				80AA57C729AE264900BE43F7 /* API */,
+				804A497329AA406A00FF8AA5 /* Manager */,
+				809AD72729ACCDB300995E82 /* Model */,
+				804A497629AA411D00FF8AA5 /* Scene */,
+				804A497029AA3F7200FF8AA5 /* Extension */,
+				801FB83529AA325E00AD644D /* AppDelegate.swift */,
+				801FB83E29AA326000AD644D /* Assets.xcassets */,
+				801FB84329AA326000AD644D /* Info.plist */,
+			);
+			path = TodayFood;
+			sourceTree = "<group>";
+		};
+		801FB84B29AA326000AD644D /* TodayFoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				801FB84C29AA326000AD644D /* TodayFoodTests.swift */,
+			);
+			path = TodayFoodTests;
+			sourceTree = "<group>";
+		};
+		801FB85529AA326000AD644D /* TodayFoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				801FB85629AA326000AD644D /* TodayFoodUITests.swift */,
+				801FB85829AA326000AD644D /* TodayFoodUITestsLaunchTests.swift */,
+			);
+			path = TodayFoodUITests;
+			sourceTree = "<group>";
+		};
+		804A497029AA3F7200FF8AA5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				804A497129AA3F8500FF8AA5 /* UIStoryboard+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		804A497329AA406A00FF8AA5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				804A497429AA407A00FF8AA5 /* ViewControllerManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		804A497629AA411D00FF8AA5 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				807E3F6529AF9E5D0096297C /* Base */,
+				809AD72929ACD01600995E82 /* RecommendList */,
+				809AD72829ACD00F00995E82 /* Setting */,
+				804A498129AAF46A00FF8AA5 /* SideMenu */,
+				804A498029AAF45D00FF8AA5 /* Splash */,
+				804A497F29AAF45300FF8AA5 /* Home */,
+				801FB83B29AA325E00AD644D /* Main.storyboard */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		804A497F29AAF45300FF8AA5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				804A496E29AA3D1100FF8AA5 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		804A498029AAF45D00FF8AA5 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				801FB83929AA325E00AD644D /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		804A498129AAF46A00FF8AA5 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				804A498229AAF48A00FF8AA5 /* CustomSideMenuNavigationController.swift */,
+				804A498529AAF4C100FF8AA5 /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		807E3F6529AF9E5D0096297C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				807E3F6629AF9E740096297C /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		809AD72729ACCDB300995E82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				807E3F6829AFA15A0096297C /* LocalKeyword.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		809AD72829ACD00F00995E82 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				809AD72C29ACD08E00995E82 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		809AD72929ACD01600995E82 /* RecommendList */ = {
+			isa = PBXGroup;
+			children = (
+				809AD72A29ACD03600995E82 /* RecommendListViewController.swift */,
+			);
+			path = RecommendList;
+			sourceTree = "<group>";
+		};
+		80AA57C729AE264900BE43F7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				80AA57CD29AE2E9E00BE43F7 /* Search */,
+				80AA57C829AE266C00BE43F7 /* Base */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		80AA57C829AE266C00BE43F7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				80AA57C929AE2E6F00BE43F7 /* BaseAPI.swift */,
+				80AA57D229AE2EDA00BE43F7 /* BaseService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		80AA57CD29AE2E9E00BE43F7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				80AA57CE29AE2EBB00BE43F7 /* SearchAPI.swift */,
+				80AA57D029AE2ECF00BE43F7 /* SearchService.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EE88BC9D4A2F2BF5268D24F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80AA57EA29AF668700BE43F7 /* libsqlite3.tbd */,
+				80AA57E829AF666700BE43F7 /* libxml2.tbd */,
+				80AA57E629AF664600BE43F7 /* libc++.tbd */,
+				80AA57E429AF663C00BE43F7 /* QuartzCore.framework */,
+				80AA57E229AF663400BE43F7 /* CoreLocation.framework */,
+				80AA57E029AF662900BE43F7 /* SystemConfiguration.framework */,
+				80AA57DE29AF661900BE43F7 /* OpenGLES.framework */,
+				80AA57DA29AF660900BE43F7 /* DaumMap.framework */,
+				80AA57D829AF652500BE43F7 /* DaumMap.embeddedframework */,
+				8A64FEDE128E41FC1F84A22E /* Pods_TodayFood.framework */,
+				41996F7D12A9555CF314D1FD /* Pods_TodayFood_TodayFoodUITests.framework */,
+				E6AEE4F9D4CFEF127F26F83D /* Pods_TodayFoodTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		801FB83129AA325E00AD644D /* TodayFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801FB85C29AA326000AD644D /* Build configuration list for PBXNativeTarget "TodayFood" */;
+			buildPhases = (
+				F01E9E5AE64BDD72E3D6F276 /* [CP] Check Pods Manifest.lock */,
+				801FB82E29AA325E00AD644D /* Sources */,
+				801FB82F29AA325E00AD644D /* Frameworks */,
+				801FB83029AA325E00AD644D /* Resources */,
+				30407CF23F05D1B9E97DBD6D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayFood;
+			productName = TodayFood;
+			productReference = 801FB83229AA325E00AD644D /* TodayFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		801FB84729AA326000AD644D /* TodayFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801FB85F29AA326000AD644D /* Build configuration list for PBXNativeTarget "TodayFoodTests" */;
+			buildPhases = (
+				306934928D09B7693A217928 /* [CP] Check Pods Manifest.lock */,
+				801FB84429AA326000AD644D /* Sources */,
+				801FB84529AA326000AD644D /* Frameworks */,
+				801FB84629AA326000AD644D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				801FB84A29AA326000AD644D /* PBXTargetDependency */,
+			);
+			name = TodayFoodTests;
+			productName = TodayFoodTests;
+			productReference = 801FB84829AA326000AD644D /* TodayFoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		801FB85129AA326000AD644D /* TodayFoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801FB86229AA326000AD644D /* Build configuration list for PBXNativeTarget "TodayFoodUITests" */;
+			buildPhases = (
+				7AA85D6DF3627884CC0C3899 /* [CP] Check Pods Manifest.lock */,
+				801FB84E29AA326000AD644D /* Sources */,
+				801FB84F29AA326000AD644D /* Frameworks */,
+				801FB85029AA326000AD644D /* Resources */,
+				9E2E80962E7E9FB371AE8E4F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				801FB85429AA326000AD644D /* PBXTargetDependency */,
+			);
+			name = TodayFoodUITests;
+			productName = TodayFoodUITests;
+			productReference = 801FB85229AA326000AD644D /* TodayFoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		801FB82A29AA325E00AD644D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					801FB83129AA325E00AD644D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					801FB84729AA326000AD644D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 801FB83129AA325E00AD644D;
+					};
+					801FB85129AA326000AD644D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 801FB83129AA325E00AD644D;
+					};
+				};
+			};
+			buildConfigurationList = 801FB82D29AA325E00AD644D /* Build configuration list for PBXProject "TodayFood" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 801FB82929AA325E00AD644D;
+			productRefGroup = 801FB83329AA325E00AD644D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				801FB83129AA325E00AD644D /* TodayFood */,
+				801FB84729AA326000AD644D /* TodayFoodTests */,
+				801FB85129AA326000AD644D /* TodayFoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		801FB83029AA325E00AD644D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801FB83F29AA326000AD644D /* Assets.xcassets in Resources */,
+				801FB83D29AA325E00AD644D /* Main.storyboard in Resources */,
+				80AA57D929AF652500BE43F7 /* DaumMap.embeddedframework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801FB84629AA326000AD644D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801FB85029AA326000AD644D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30407CF23F05D1B9E97DBD6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodayFood/Pods-TodayFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodayFood/Pods-TodayFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodayFood/Pods-TodayFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		306934928D09B7693A217928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodayFoodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA85D6DF3627884CC0C3899 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodayFood-TodayFoodUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E2E80962E7E9FB371AE8E4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodayFood-TodayFoodUITests/Pods-TodayFood-TodayFoodUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodayFood-TodayFoodUITests/Pods-TodayFood-TodayFoodUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodayFood-TodayFoodUITests/Pods-TodayFood-TodayFoodUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F01E9E5AE64BDD72E3D6F276 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodayFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		801FB82E29AA325E00AD644D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801FB83A29AA325E00AD644D /* SplashViewController.swift in Sources */,
+				80AA57CF29AE2EBB00BE43F7 /* SearchAPI.swift in Sources */,
+				809AD72D29ACD08E00995E82 /* SettingViewController.swift in Sources */,
+				801FB83629AA325E00AD644D /* AppDelegate.swift in Sources */,
+				809AD72B29ACD03600995E82 /* RecommendListViewController.swift in Sources */,
+				807E3F6729AF9E740096297C /* BaseViewController.swift in Sources */,
+				804A496F29AA3D1100FF8AA5 /* HomeViewController.swift in Sources */,
+				80AA57D329AE2EDA00BE43F7 /* BaseService.swift in Sources */,
+				804A498329AAF48A00FF8AA5 /* CustomSideMenuNavigationController.swift in Sources */,
+				807E3F6929AFA15A0096297C /* LocalKeyword.swift in Sources */,
+				804A497529AA407A00FF8AA5 /* ViewControllerManager.swift in Sources */,
+				80AA57CA29AE2E6F00BE43F7 /* BaseAPI.swift in Sources */,
+				80AA57D129AE2ECF00BE43F7 /* SearchService.swift in Sources */,
+				804A498629AAF4C100FF8AA5 /* SideMenuViewController.swift in Sources */,
+				804A497229AA3F8500FF8AA5 /* UIStoryboard+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801FB84429AA326000AD644D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801FB84D29AA326000AD644D /* TodayFoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801FB84E29AA326000AD644D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801FB85929AA326000AD644D /* TodayFoodUITestsLaunchTests.swift in Sources */,
+				801FB85729AA326000AD644D /* TodayFoodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		801FB84A29AA326000AD644D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 801FB83129AA325E00AD644D /* TodayFood */;
+			targetProxy = 801FB84929AA326000AD644D /* PBXContainerItemProxy */;
+		};
+		801FB85429AA326000AD644D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 801FB83129AA325E00AD644D /* TodayFood */;
+			targetProxy = 801FB85329AA326000AD644D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		801FB83B29AA325E00AD644D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				801FB83C29AA325E00AD644D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		801FB85A29AA326000AD644D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		801FB85B29AA326000AD644D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		801FB85D29AA326000AD644D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E447C9B5627CB656AF8D3D2B /* Pods-TodayFood.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33P2W5HPPR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IOS_DaumMap_SDK_1.4.0/lib/DaumMap.embeddedframework",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodayFood/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "오늘뭐먹쥬";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치에 따른 식당을 추천받으시려면 위치 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치에 따른 식당을 추천받으시려면 위치 권한이 필요합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaemoon.todayfood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TodayFood-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		801FB85E29AA326000AD644D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7498BD2C4D561B546821EF8D /* Pods-TodayFood.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33P2W5HPPR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IOS_DaumMap_SDK_1.4.0/lib/DaumMap.embeddedframework",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodayFood/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "오늘뭐먹쥬";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치에 따른 식당을 추천받으시려면 위치 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치에 따른 식당을 추천받으시려면 위치 권한이 필요합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaemoon.todayfood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TodayFood-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		801FB86029AA326000AD644D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A383DBB059B15ACCA8FEAB /* Pods-TodayFoodTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33P2W5HPPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaemoon.todayfood.TodayFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayFood.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodayFood";
+			};
+			name = Debug;
+		};
+		801FB86129AA326000AD644D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C4CB8E8AA1E9E81B0EAB365 /* Pods-TodayFoodTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33P2W5HPPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaemoon.todayfood.TodayFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayFood.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodayFood";
+			};
+			name = Release;
+		};
+		801FB86329AA326000AD644D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E17BC57B6F765E000F769549 /* Pods-TodayFood-TodayFoodUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33P2W5HPPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaemoon.todayfood.TodayFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TodayFood;
+			};
+			name = Debug;
+		};
+		801FB86429AA326000AD644D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9661E7802343082105667EA /* Pods-TodayFood-TodayFoodUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33P2W5HPPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaemoon.todayfood.TodayFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TodayFood;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		801FB82D29AA325E00AD644D /* Build configuration list for PBXProject "TodayFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801FB85A29AA326000AD644D /* Debug */,
+				801FB85B29AA326000AD644D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801FB85C29AA326000AD644D /* Build configuration list for PBXNativeTarget "TodayFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801FB85D29AA326000AD644D /* Debug */,
+				801FB85E29AA326000AD644D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801FB85F29AA326000AD644D /* Build configuration list for PBXNativeTarget "TodayFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801FB86029AA326000AD644D /* Debug */,
+				801FB86129AA326000AD644D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801FB86229AA326000AD644D /* Build configuration list for PBXNativeTarget "TodayFoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801FB86329AA326000AD644D /* Debug */,
+				801FB86429AA326000AD644D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 801FB82A29AA325E00AD644D /* Project object */;
+}
