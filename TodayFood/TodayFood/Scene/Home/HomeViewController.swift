@@ -14,7 +14,7 @@ class HomeViewController: BaseViewController {
     var locationManager = CLLocationManager()
     var isLocationAuthorize = false
     var poiItems:[MTMapPOIItem] = []
-    var resorants:[LocalKeyword.Document] = []
+    var restorants:[LocalKeyword.Document] = []
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -60,6 +60,23 @@ class HomeViewController: BaseViewController {
         self.fetchRestaurantData()
     }
     
+    @IBAction func onTouchedShareButton(_ sender: Any) {
+        guard !self.restorants.isEmpty else {
+            return
+        }
+        
+        var restorantInfos = ""
+
+        for restorant in self.restorants {
+            let info = "\(restorant.place_name)\n\(restorant.road_address_name)\n\(restorant.place_url)\n\n"
+            restorantInfos.append(contentsOf: info)
+        }
+
+        let activityVC = UIActivityViewController(activityItems: [restorantInfos], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        self.present(activityVC, animated: true, completion: nil)
+    }
+    
     
     func currentLocation() -> MTMapPointGeo {
         return MTMapPointGeo(latitude: self.locationManager.location?.coordinate.latitude ?? 0, longitude: self.locationManager.location?.coordinate.longitude ?? 0)
@@ -67,8 +84,8 @@ class HomeViewController: BaseViewController {
     
     func fetchRestaurantData() {
         let currentLocation = self.currentLocation()
-        let randomPage = Int.random(in: 0..<20)
-        self.resorants.removeAll()
+        let randomPage = Int.random(in: 0..<15)
+        self.restorants.removeAll()
         self.poiItems.removeAll()
         self.kakaoMap?.removeAllPOIItems()
         
@@ -76,7 +93,7 @@ class HomeViewController: BaseViewController {
             .map(LocalKeyword.self)
             .subscribe(
                 onSuccess: {
-                    self.resorants = $0.documents
+                    self.restorants = $0.documents
                     
                     for restorant in $0.documents {
                         let poiItem = MTMapPOIItem()
