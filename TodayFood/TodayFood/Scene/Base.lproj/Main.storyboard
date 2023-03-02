@@ -190,6 +190,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="onTouchedRecommendButton:" destination="hss-Ce-Mat" eventType="touchUpInside" id="8jj-xW-6fT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

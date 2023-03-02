@@ -13,6 +13,8 @@ class HomeViewController: BaseViewController {
     var kakaoMap: MTMapView?
     var locationManager = CLLocationManager()
     var isLocationAuthorize = false
+    var poiItems:[MTMapPOIItem] = []
+    var resorants:[LocalKeyword.Document] = []
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -54,6 +56,10 @@ class HomeViewController: BaseViewController {
         self.kakaoMap?.setMapCenter(MTMapPoint(geoCoord: self.currentLocation()), animated: true)
     }
     
+    @IBAction func onTouchedRecommendButton(_ sender: Any) {
+        self.fetchRestaurantData()
+    }
+    
     
     func currentLocation() -> MTMapPointGeo {
         return MTMapPointGeo(latitude: self.locationManager.location?.coordinate.latitude ?? 0, longitude: self.locationManager.location?.coordinate.longitude ?? 0)
@@ -61,10 +67,26 @@ class HomeViewController: BaseViewController {
     
     func fetchRestaurantData() {
         let currentLocation = self.currentLocation()
-        SearchService.shared.getLocalWithKeyword(x: currentLocation.latitude, y: currentLocation.longitude, page: 1)
+        let randomPage = Int.random(in: 0..<20)
+        self.resorants.removeAll()
+        self.poiItems.removeAll()
+        self.kakaoMap?.removeAllPOIItems()
+        
+        SearchService.shared.getLocalWithKeyword(x: currentLocation.longitude, y: currentLocation.latitude, page: randomPage)
+            .map(LocalKeyword.self)
             .subscribe(
                 onSuccess: {
-                    print("\($0)")
+                    self.resorants = $0.documents
+                    
+                    for restorant in $0.documents {
+                        let poiItem = MTMapPOIItem()
+                        poiItem.itemName = restorant.place_name
+                        poiItem.mapPoint = MTMapPoint(geoCoord: MTMapPointGeo(latitude: Double(restorant.y)!, longitude: Double(restorant.x)!))
+                        poiItem.markerType = .redPin
+                        self.poiItems.append(poiItem)
+                    }
+
+                    self.kakaoMap?.addPOIItems(self.poiItems)
                 },
                 onFailure: {
                     print("\($0.localizedDescription)")

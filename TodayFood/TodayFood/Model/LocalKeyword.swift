@@ -8,5 +8,13 @@
 import Foundation
 
 struct LocalKeyword: Codable {
+    var documents: [Document]
     
+    struct Document: Codable {
+        var place_name: String
+        var place_url: String
+        var road_address_name: String
+        var x: String
+        var y: String
+    }
 }
